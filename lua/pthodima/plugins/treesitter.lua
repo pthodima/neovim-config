@@ -30,7 +30,6 @@ return {
 				"yaml",
 				"html",
 				"css",
-				"tailwindcss",
 				"prisma",
 				"markdown",
 				"markdown_inline",

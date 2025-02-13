@@ -1,6 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
-
 local opt = vim.opt -- for conciseness
 
 -- line numbers
@@ -12,6 +11,7 @@ opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
 opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
+opt.conceallevel = 1
 
 -- line wrapping
 opt.wrap = false -- disable line wrapping
@@ -22,6 +22,7 @@ opt.smartcase = true -- if you include mixed case in your search, assumes you wa
 
 -- cursor line
 opt.cursorline = true -- highlight the current cursor line
+opt.scrolloff = 10 -- stop the cursor from moving below the n-th bottom line on screen
 
 -- appearance
 
@@ -43,3 +44,11 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+vim.cmd("let g:python3_host_prog='/Users/pthodima/miniforge3/envs/sortr/bin/python3'")
+
+-- Append template to new C++ files
+vim.api.nvim_create_autocmd("BufNewFile", {
+	pattern = "*.cpp",
+	command = "0r /Users/pthodima/.config/cpp/template.cpp",
+})
