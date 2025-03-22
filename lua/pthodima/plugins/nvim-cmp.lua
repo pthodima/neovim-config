@@ -24,6 +24,7 @@ return {
 
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
+    require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/lua/pthodima/plugins/lsp/luasnip/"})
 
     cmp.setup({
       completion = {
@@ -43,6 +44,7 @@ return {
         ["<C-e>"] = cmp.mapping.abort(), -- close completion window
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
       }),
+
       -- sources for autocompletion
       sources = cmp.config.sources({
         { name = "nvim_lsp" },

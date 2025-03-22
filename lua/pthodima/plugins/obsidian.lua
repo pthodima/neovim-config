@@ -26,6 +26,9 @@ return {
 				name = "Event Vision",
 				path = "~/ObsidianNotes/Event-Vision",
 			},
+			{
+				name = "UW 2025", path = "~/ObsidianNotes/uw_sp_25",
+			},
 		},
 
 		-- see below for full list of options 👇
