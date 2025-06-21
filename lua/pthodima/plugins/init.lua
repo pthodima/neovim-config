@@ -1,4 +1,4 @@
 return {
   "nvim-lua/plenary.nvim", -- lua functions that many plugins use
-  "christoomey/vim-tmux-navigator",
+  { import = "pthodima.plugins.smart-splits" },
 }

@@ -14,7 +14,8 @@ opt.autoindent = true -- copy indent from current line when starting new one
 -- opt.conceallevel = 1
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- disable line wrapping
+opt.linebreak = true -- stop wrap from splitting words across lines
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
