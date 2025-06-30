@@ -14,7 +14,8 @@ opt.autoindent = true -- copy indent from current line when starting new one
 -- opt.conceallevel = 1
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- disable line wrapping
+opt.linebreak = true -- stop wrap from splitting words across lines
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -45,7 +46,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
-vim.cmd("let g:python3_host_prog='/Users/pthodima/miniforge3/envs/sortr/bin/python3'")
+-- vim.cmd("let g:python3_host_prog='/Users/pthodima/miniforge3/envs/sortr/bin/python3'")
 
 -- Append template to new C++ files
 vim.api.nvim_create_autocmd("BufNewFile", {
